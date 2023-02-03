@@ -17,7 +17,8 @@ module.exports = {
       },
 
       colors: {
-        "Main": '#2d3748'
+        "Main": '#2d3748',
+        "gradient": 'bg-gradient-to-r from-red-400 via-pink-400 to-green-400'
       },
 
     },

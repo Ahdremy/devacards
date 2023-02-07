@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +61,7 @@
         <!-- Hero Content -->
         <div class="flex flex-col space-y-6 lg:w-1/2">
           <h3 class="text-3xl xs:text-5xl text-center lg:text-start font-bold leading-normal">A special credit card made for Developers.</h3>
-          <p class="text-sm xs:text-base text-center lg:text-start">Get access to tools you need to grow your career and reach your financial goals. Get perks such as generous cashback on tech purchases, flexible rewards, and more.</p>
+          <p class="text-sm xs:text-base text-center lg:text-start px-2">Get access to tools you need to grow your career and reach your financial goals. Get perks such as generous cashback on tech purchases, flexible rewards, and more.</p>
 
 
           <!-- Search Bar For Small Screens
@@ -69,7 +69,8 @@
 
 
           <form action="" class="lg:hidden rounded-md px-4 py-2 xs:w-full max-w-2xl border-2 border-gray-800 mx-auto">
-            <input type="text" name="" id="" required placeholder="Enter email address" class="bg-transparent border-0 outline-none placeholder:text-gray-700">
+            <input type="text" name="" id="" placeholder="Enter email address" class="bg-transparent border-0 outline-none placeholder:text-gray-700 focus:border-gray-500 focus:outline-none invalid-span:block invalid-input:border-red-400 valid-input:border-green-500" autocomplete="on" required pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <span class="mt-2 hidden text-sm text-red-400">Please enter a valid email address. </span>
           </form>
           <div class="flex justify-center items-center lg:hidden">
             <button type="submit" class="btn">Get Free Card</button>
@@ -81,8 +82,9 @@
 
 
           <form action="" class="hidden lg:flex items-center rounded-md px-4 py-2 w-full max-w-2xl border-2 border-gray-800">
-            <input type="text" name="" id="" required placeholder="Enter email address" class="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-gray-700">
+            <input type="text" name="" id="" placeholder="Enter email address" class="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-gray-700 focus:border-gray-500 focus:outline-none invalid-span:block invalid-input:border-red-400 valid-input:border-green-500" autocomplete="on" required pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <button type="submit" class="btn">Get Free Card</button>
+            <span class="mt-2 hidden text-sm text-red-400">Please enter a valid email address. </span>
           </form>
 
           <!-- Statistics -->
@@ -134,8 +136,6 @@
         </div>
       </div>
     </header>
-
-    
   </div>
 
   <section id="brands" class="bg-gray-900">
@@ -197,11 +197,11 @@
   <section id="features">
     <div class="container mx-auto">
 
-      <h2 class="font-bold text-center sm:text-start text-5xl text-gray-500 pt-20"><span class="text-gray-900">Save more</span><br>with Devcards.</h2>
+      <h2 class="font-bold text-center sm:text-start px-2 text-5xl text-gray-500 pt-20"><span class="text-gray-900">Save more</span><br>with Devcards.</h2>
 
       <!-- This div covers the first three containers for three features of Devcards. I am using grids to make the containers responsive on all media screens. -->
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 py-16 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 py-16 px-2 gap-6">
 
         <!-- First Feature -->
         <div class="flex flex-col items-center justify-center gap-3 shadow-xl rounded-lg p-6">
@@ -251,53 +251,253 @@
 
       <!-- This div covers the containers for other features of Devcards. I am using grids to make the containers responsive on all media screens. -->
 
-      <div class="flex flex-col md:flex-row flex-wrap items-center justify-center py-16 gap-3">
+      <div class="flex flex-col md:flex-row items-center justify-center py-16 gap-3">
 
-        <!-- First Feature -->
-        <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
-          <!-- ICON SVG -->
-          <i class="fa-solid fa-chart-line text-3xl pt-7"></i>
+        <div class="flex flex-col justify-center">
 
-          <!-- CONTENTS -->
-          <h3 class="pt-12 text-xl">Personalized Dashboard</h3>
-          <p class="py-2 text-gray-600">Manage your account with our user-friendly and intuitive platform. Stay on top of your finances with real-time updates, detailed transaction history, and customizable spending categories.</p>
+           <!-- First Feature -->
+          <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
+            <!-- ICON SVG -->
+            <i class="fa-solid fa-chart-line text-3xl pt-7"></i>
+
+            <!-- CONTENTS -->
+            <h3 class="pt-12 text-xl">Personalized Dashboard</h3>
+            <p class="py-2 text-gray-600">Manage your account with our user-friendly and intuitive platform. Stay on top of your finances with real-time updates, detailed transaction history, and customizable spending categories.</p>
+          </div>
+
+          <!-- Third Feature -->
+          <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
+            <!-- ICON SVG -->
+            <i class="fa-solid fa-mask text-3xl pt-7"></i>
+
+            <!-- CONTENTS -->
+            <h3 class="pt-12 text-xl">Zero Fraud Liability</h3>
+            <p class="py-2 text-gray-600">Devcards offers peace of mind for cardholders by protecting them from authorized charges. In the event of any fraudulent activity, Devcards will work to resolve the issue with full reimbursement.</p>
+          </div>
+          
         </div>
 
-        <!-- Second Feature -->
-        <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
-          <!-- ICON SVG -->
-          <i class="fa-solid fa-laptop-code text-3xl pt-7"></i>
+        <div class="flex flex-col justify-center">
 
-          <!-- CONTENTS -->
-          <h3 class="pt-12 text-xl">Tailored for Developers</h3>
-          <p class="py-2 text-gray-600">Devcards is designed specifically to meet the needs and requirements of developers. Devcards understands the unique lifestyle and financial habits of developers, offering benefits for that.</p>
+          <!-- Second Feature -->
+          <div class="p-5 h-full md:h-[416px] w-full lg:w-[396px] rounded-lg shadow-xl">
+            <!-- ICON SVG -->
+            <i class="fa-solid fa-laptop-code text-3xl pt-7 md:pt-[90px]"></i>
+
+            <!-- CONTENTS -->
+            <h3 class="pt-12 md:pt-12 text-xl">Tailored for Developers</h3>
+            <p class="py-2 text-gray-600">Devcards is designed specifically to meet the needs and requirements of developers. With exclusive benefits, Devcards provides a credit card that helps developers grow. <br><br>Devcards understands the unique lifestyle and habits of developers, offering benefits for that.</p>
+          </div>
+
+           <!-- Fourth Feature -->
+          <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
+            <!-- ICON SVG -->
+            <i class="fa-solid fa-lock text-3xl pt-7"></i>
+
+            <!-- CONTENTS -->
+            <h3 class="pt-12 text-xl">Secure Online Access</h3>
+            <p class="py-2 text-gray-600">Manage your account online securely with our robust security measures, encrypted data transmission, and 24/7 monitoring. We ensure that your information is protected at all times.</p>
+          </div>
+
         </div>
 
-         <!-- Third Feature -->
-         <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
-          <!-- ICON SVG -->
-          <i class="fa-solid fa-mask text-3xl pt-7"></i>
-
-          <!-- CONTENTS -->
-          <h3 class="pt-12 text-xl">Zero Fraud Liability</h3>
-          <p class="py-2 text-gray-600">Devcards offers peace of mind for cardholders by protecting them from authorized charges. In the event of any fraudulent activity, Devcards will work to resolve the issue with full reimbursement.</p>
-         </div>
-
-         <!-- Fourth Feature -->
-         <div class="p-5 h-72 w-full lg:w-[396px] rounded-lg shadow-xl">
-          <!-- ICON SVG -->
-          <i class="fa-solid fa-lock text-3xl pt-7"></i>
-
-          <!-- CONTENTS -->
-          <h3 class="pt-12 text-xl">Secure Online Access</h3>
-          <p class="py-2 text-gray-600">Manage your account online securely with our robust security measures, encrypted data transmission, and 24/7 monitoring. We ensure that your financial information is protected at all times.</p>
-         </div>
       </div>
     </div>
   </section>
 
+  <section id="testimonials">
+    <div class="container mx-auto">
+      
+      <h2 class="text-center font-bold text-4xl p-2">What our happy clients say about us</h2>
+      <h3 class="text-center pb-3 px-2">2,157 people have said how good Devcards is</h3>
 
+      <div class="grid grid-cols-1 md:grid-cols-3 place-items-center py-5 gap-4">
+  
+        <!-- Testimonial One -->
+  
+        <div class="flex flex-col space-y-4 shadow-lg p-6 rounded-md">
+          <!-- SVG Star -->
+          <div class="flex pt-2">
+            <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+            <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+            <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+            <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+            <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          </div>
+          <!-- Contents -->
+          <p class="pt-2">"As a freelance developer, Devcards' generous cashback program has been a game-changer for me. I've saved a significant amount on all my purchases and use that money to reinvest."</p>
+  
+          <div class="flex items-center gap-3">
+            <!-- Avatar -->
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="./images/leslie.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <!-- User Details -->
+            <div class="flex flex-col">
+              <h3 class="font-bold">Leslie Alexander</h3>
+              <p>React Developer</p>
+            </div>
+          </div>
+        </div>
+  
+      <!-- Testimonial Two -->
+  
+      <div class="flex flex-col space-y-4 shadow-lg p-6 rounded-md">
+        <!-- SVG Star -->
+        <div class="flex pt-2">
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+        </div>
+        <!-- Contents -->
+        <p class="pt-2">"As a student, I', always looking for ways to save money. Devcards' flexible rewards program makes this super easy. I've been able to redeem rewards for things I actually want like travel."</p>
 
+        <div class="flex items-center gap-3">
+          <!-- Avatar -->
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="./images/jacob.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <!-- User Details -->
+          <div class="flex flex-col">
+            <h3 class="font-bold">Jakob Mphanti</h3>
+            <p>Digital Marketer</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Three -->
+  
+      <div class="flex flex-col space-y-4 shadow-lg p-6 rounded-md">
+        <!-- SVG Star -->
+        <div class="flex pt-2">
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+          <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+        </div>
+        <!-- Contents -->
+        <p class="pt-2">"Devcards' zero fraud liability gives me peace of mind knowing that I'm protected from unauthorized purchases. I can focus on my work knowing that my finances are in good hands."</p>
+
+        <div class="flex items-center gap-3">
+          <!-- Avatar -->
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="./images/jenny.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <!-- User Details -->
+          <div class="flex flex-col">
+            <h3 class="font-bold">Temitope Adewale</h3>
+            <p>Python Developer</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="flex justify-center items-center"><a href="#" class="text-center underline text-gray-800 hover:text-gray-400 hover:no-underline font-bold">Check all 2,157 reviews</a></div>
+    </div>
+  </section>
+
+  <section id="demo-form">
+    <div class="container mx-auto text-center">
+      <h3 class="font-bold text-4xl px-2 pt-12 md:pt-24">Get a free credit card</h3>
+    </div>
+    <div class="flex flex-col pb-11 px-6 lg:px-8">
+
+      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <div class="bg-gray-50 py-8 px-6 shadow-xl rounded-lg sm:px-10">
+          <form class="mb-0 space-y-6 group" action="#" method="POST">
+            <!-- Input Fields -->
+            <div class="mb-6">
+                <label for="name" class="mb-2 block text-sm text-gray-600">Your name</label>
+                <input type="email" name="email" id="email" placeholder="enter your full name" class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-400 shadow shadow-gray-100 valid-input:border-green-500" autocomplete="off"" />
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="mb-2 block text-sm text-gray-600">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="you@company.com" class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-400 shadow shadow-gray-100 invalid-span:block invalid-input:border-red-400 valid-input:border-green-500" autocomplete="on" required pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                <span class="mt-2 hidden text-sm text-red-400">Please enter a valid email address.</span>
+              </div>
+             
+            <div>
+              <label for="profession" class="block text-sm font-medium text-gray-700">What do you do?</label>
+              <div class="mt-1">
+                <select name="company-size" id="company-size" class="w-full border-gray-300 rounded-lg shadow-sm">
+                  <option value="">Select a profession</option>
+                  <option value="dev">Frontend Developer</option>
+                  <option value="dev">Backend Developer</option>
+                  <option value="design">UI/UX Designer</option>
+                  <option value="design">Product Manager</option>
+                  <option value="content">Technical Writer</option>
+                  <option value="data">Data Analyst</option>
+                </select>
+              </div>
+            </div>
+             <!-- Submit -->
+
+            <div class="mb-6">
+                <button type="submit" class="btn w-full rounded-md focus:bg-gray-600 focus:outline-none group-invalid:pointer-events-none group-invalid:opacity-70">Get your free card</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-50">
+    <div class="container mx-auto">
+      <div class="flex flex-col justify-center items-center py-10 px-6">
+        <!-- Logo -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-1">
+            <span class="sr-only">DEVCARDS</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d3748" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="3" y="5" width="18" height="14" rx="3" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <line x1="7" y1="15" x2="7.01" y2="15" />
+              <line x1="11" y1="15" x2="13" y2="15" />
+            </svg>
+            <h2 class="font-bold">DEVCARDS</h2>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <div class="flex items-center justify-center gap-5 py-4">
+          <a href="#" class="hover:text-gray-400">About</a>
+          <a href="#features2" class="hover:text-gray-400">Features</a>
+          <a href="#testimonials" class="hover:text-gray-400">Works</a>
+          <a href="#" class="hover:text-gray-400">Support</a>
+          <a href="#" class="hover:text-gray-400">Help</a>
+        </div>
+
+        <div class="flex gap-0 items-center">
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+          <i class="fa-solid fa-grip-lines max-w-md text-gray-300 text-xl"></i>
+        </div>
+
+        <!-- Socials -->
+        <div class="flex justify-center items-center gap-5 py-4">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-center py-4"><i class="fa-regular fa-copyright"></i> Copyright 2023. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>
